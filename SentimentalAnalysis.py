@@ -37,15 +37,15 @@ for tweet in tweets:
     
     if (analysis.sentiment.polarity == 0):
         neutral += 1
-        print(analysis)
+        # print(analysis)
     
     elif (analysis.sentiment.polarity < 0.00):
         negative += 1
-        print(analysis)
+        # print(analysis)
     
     elif (analysis.sentiment.polarity > 0.00):
         positive += 1
-        print(analysis)
+        # print(analysis)
 
 positive = percentage(positive, noOfTweet)
 negative = percentage(negative, noOfTweet)
